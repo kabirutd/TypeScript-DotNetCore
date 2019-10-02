@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\ts\functions.ts" />
     <Content Remove="wwwroot\ts\tests.ts" />
   </ItemGroup>
 
