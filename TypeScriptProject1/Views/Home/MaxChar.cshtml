@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Max Char";
+}
+
+@section Scripts{
+
+    <script src="~/ts/maxchar.js"></script>
+}
+
+
+<div class="container-fluid">
+
+    <h5>MAX CHAR</h5>
+    <p>
+    
+        Given a string, this typescript function returns the character that is most
+        commonly used in the string and also it's count using tuple as return type.<br />
+        Examples:<br />
+        // maxChar("abcccccccd") === "c",7<br />
+        // maxChar("apple 1231111") === "1", 5<br />
+
+    </p>
+    <form>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-4 col-form-label">Input String to find out max Char:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="maxchartext" placeholder="Max Char!">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-8">
+                <button type="button" onclick="findMaxChar()" class="btn btn-sm btn-primary">Max Char</button>
+
+            </div>
+        </div>
+    </form>
+
+    <span id="maxcharspan"></span>
+
+</div>
+
+<script type="text/javascript">
+    function findMaxChar() {
+       
+        let maxChar = getMaxChar(document.getElementById("maxchartext").value)[0]
+        let maxCharCount = getMaxChar(document.getElementById("maxchartext").value)[1]
+
+        document.getElementById("maxcharspan").innerHTML = "<strong>Max Char:</strong> " + maxChar + "<br/><strong>Max Char Count:</strong> " + maxCharCount  ; 
+    }
+</script>
+

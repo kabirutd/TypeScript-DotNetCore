@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Reverse Int";
+}
+
+@section Scripts{
+
+    <script src="~/ts/reverseint.js"></script>
+}
+
+
+<div class="container-fluid">
+
+    <h5>REVERSE INT</h5>
+    <p>
+
+        Given a NUMBER, this typescript function reverses a number.<br />
+        Examples:<br />
+        // getReverseInt(123) === 321<br />
+        // getReverseInt(500) === 5 <br />
+
+    </p>
+    <form>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-4 col-form-label">Input number to reverse:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="reverseinttext" placeholder="Reverse Int!">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-8">
+                <button type="button" onclick="reverseInt()" class="btn btn-sm btn-primary">Reverse Int</button>
+
+            </div>
+        </div>
+    </form>
+
+    <span id="reverseintspan"></span>
+
+</div>
+
+<script type="text/javascript">
+    function reverseInt() {
+
+        let reversedInt = getReverseInt(document.getElementById("reverseinttext").value)
+       
+        document.getElementById("reverseintspan").innerHTML = "<strong>Reversed Integer:</strong> " + reversedInt ;
+    }
+</script>
+

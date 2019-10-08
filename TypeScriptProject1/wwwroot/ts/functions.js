@@ -12,7 +12,8 @@ var Multiply = function (num3, num4) {
 console.log('Multiply using Anonymous: ' + Multiply);
 //Lambda function
 //=============================================================
-var num1 = 150, num2 = 15;
+var num1 = 150;
+var num2 = 15;
 var Divide = function (num1, num2) { return num2 == 0 ? "Cannot divid by 0" : (num1 / num2).toString(); };
 console.log('Divid using lambda: ' + Divide);
 //Function with Union Types

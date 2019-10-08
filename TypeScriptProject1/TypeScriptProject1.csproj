@@ -6,6 +6,9 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\ts\functions.ts" />
+    <Content Remove="wwwroot\ts\maxchar.ts" />
+    <Content Remove="wwwroot\ts\reverseint.ts" />
+    <Content Remove="wwwroot\ts\reversestring.ts" />
     <Content Remove="wwwroot\ts\tests.ts" />
   </ItemGroup>
 

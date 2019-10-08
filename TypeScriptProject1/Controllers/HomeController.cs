@@ -18,6 +18,19 @@ namespace TypeScriptProject1.Controllers
             _logger = logger;
         }
 
+        public IActionResult ReverseInt()
+        {
+            return View();
+        }
+        public IActionResult MaxChar()
+        {
+            return View();
+        }
+        public IActionResult ReverseString()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();

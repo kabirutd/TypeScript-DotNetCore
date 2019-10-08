@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Reverse String";
+}
+
+@section Scripts{
+    
+    <script src="~/ts/reversestring.js"></script>
+}
+
+<div class="container-fluid">
+
+    <h5>REVERSE STRING</h5>
+
+    <form>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-4 col-form-label">Enter String to Reverse:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="reversestring" placeholder="Reverse This!">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-8">
+                <button type="button" onclick="reverseStringLocal()" class="btn btn-sm btn-primary">Reverse String</button>
+
+            </div>
+        </div>
+    </form>
+       
+    <strong>Reversed String:</strong> <span id="reversedstring"></span>
+
+</div>
+
+<script type="text/javascript">
+    function reverseStringLocal() {
+
+        //document.getElementById("reversedstring").innerHTML = reverseString('jamais'); //reverseString(document.getElementById("reversestring").innerText());
+
+        document.getElementById("reversedstring").innerHTML = reverseString(document.getElementById("reversestring").value); //reverseString(document.getElementById("reversestring").innerText());
+    }
+</script>

@@ -19,14 +19,16 @@ console.log('Multiply using Anonymous: ' + Multiply)
 
 //Lambda function
 //=============================================================
-let num1 = 150, num2 = 15
-let Divide = (num1, num2): string => { return num2 == 0 ? "Cannot divid by 0" : (num1 / num2).toString() }
+let num1: number = 150
+let num2: number = 15
+let Divide = (num1: number, num2: number): string => { return num2 == 0 ? "Cannot divid by 0" : (num1 / num2).toString() }
 console.log('Divid using lambda: ' + Divide)
 
 //Function with Union Types
 //===========================================================
 
 let currentTime = (hour: number | string, minute: number | string) => { return hour + ':' + minute };
+
 
 //function with optional paraeters
 //===============================================================

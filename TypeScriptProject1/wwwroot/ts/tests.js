@@ -3,7 +3,7 @@ var surName = "Kabir";
 function fullName(x, y, spaces) {
     return x + Array(spaces + 1).join(' ') + y;
 }
-alert(fullName(firstName, surName, 3) + " Hello");
+//alert(fullName(firstName, surName, 3) + " Hello");
 var fullName2 = "Mohammad Kabir";
 var age2 = 35;
 var nameAge2 = "My name is ${fullName2} and my age will be ${age2+1} next year.";
