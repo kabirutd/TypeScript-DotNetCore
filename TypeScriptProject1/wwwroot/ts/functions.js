@@ -12,13 +12,13 @@ var Multiply = function (num3, num4) {
 console.log('Multiply using Anonymous: ' + Multiply);
 //Lambda function
 //=============================================================
-var num1 = 150;
-var num2 = 15;
-var Divide = function (num1, num2) { return num2 == 0 ? "Cannot divid by 0" : (num1 / num2).toString(); };
+let num1 = 150;
+let num2 = 15;
+let Divide = (num1, num2) => { return num2 == 0 ? "Cannot divid by 0" : (num1 / num2).toString(); };
 console.log('Divid using lambda: ' + Divide);
 //Function with Union Types
 //===========================================================
-var currentTime = function (hour, minute) { return hour + ':' + minute; };
+let currentTime = (hour, minute) => { return hour + ':' + minute; };
 //function with optional paraeters
 //===============================================================
 function buildName(firstName, lastName) {
@@ -33,8 +33,7 @@ If the user passes undefined or doesn't specify an argument, the default value w
 default -initialized parameters.
 For example, "Smith" is the default value for the lastName parameter.
 */
-function buildName2(firstName, lastName) {
-    if (lastName === void 0) { lastName = "Smith"; }
+function buildName2(firstName, lastName = "Smith") {
     return firstName + ' ' + lastName;
 }
 buildName('foo', 'bar'); // firstName == 'foo', lastName == 'bar'

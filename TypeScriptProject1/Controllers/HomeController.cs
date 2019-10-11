@@ -18,6 +18,14 @@ namespace TypeScriptProject1.Controllers
             _logger = logger;
         }
 
+        public IActionResult Anagram()
+        {
+            return View();
+        }
+        public IActionResult CapitalizeSentence()
+        {
+            return View();
+        }
         public IActionResult ReverseInt()
         {
             return View();

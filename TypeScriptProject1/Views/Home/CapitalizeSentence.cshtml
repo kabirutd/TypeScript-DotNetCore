@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Capitalize Sentence";
+}
+
+@section Scripts{
+
+    <script src="~/ts/capitalizesentence.js"></script>
+}
+
+<div class="container-fluid">
+
+    <h5>REVERSE STRING</h5>
+
+    <form>
+        <div class="form-group row">
+            <label for="capitalizesentence" class="col-sm-4 col-form-label">Enter String to Reverse:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="capitalizesentence" placeholder="Capitalize This!">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-8">
+                <button type="button" onclick="capitalizesentenceLocal()" class="btn btn-sm btn-primary">Capitalize Sentence</button>
+
+            </div>
+        </div>
+    </form>
+
+    <strong>Capitalized Sentence:</strong> <span id="capitalizedsentence"></span>
+
+</div>
+
+<script type="text/javascript">
+    function capitalizesentenceLocal() {
+
+        //document.getElementById("reversedstring").innerHTML = capitalizesentence('jamais'); //capitalizesentence(document.getElementById("capitalizesentence").innerText());
+
+        document.getElementById("capitalizedsentence").innerHTML = capitalizeSentence(document.getElementById("capitalizesentence").value); //capitalizesentence(document.getElementById("capitalizesentence").innerText());
+    }
+</script>

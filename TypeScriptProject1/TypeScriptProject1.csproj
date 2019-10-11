@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\ts\capitalizesentence.ts" />
     <Content Remove="wwwroot\ts\functions.ts" />
     <Content Remove="wwwroot\ts\maxchar.ts" />
     <Content Remove="wwwroot\ts\reverseint.ts" />

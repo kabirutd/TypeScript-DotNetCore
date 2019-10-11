@@ -5,12 +5,11 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 function getMaxChar(str) {
-    var charMap = {};
-    var max = 0;
-    var maxChar = '';
+    const charMap = {};
+    let max = 0;
+    let maxChar = '';
     //let charArray: string[] = str.split('');
-    for (var _i = 0, str_1 = str; _i < str_1.length; _i++) {
-        var char = str_1[_i];
+    for (let char of str) {
         //console.log('char: ' + char);
         if (charMap[char]) {
             charMap[char]++;
@@ -19,7 +18,7 @@ function getMaxChar(str) {
             charMap[char] = 1;
         }
     }
-    for (var char in charMap) {
+    for (let char in charMap) {
         if (charMap[char] > max) {
             max = charMap[char];
             maxChar = char;
