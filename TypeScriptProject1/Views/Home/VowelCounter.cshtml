@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Vowel Counter";
+}
+
+@section Scripts{
+
+    <script src="~/ts/vowels.js"></script>
+}
+
+<div class="container-fluid">
+
+    <h5>VOWEL COUNTER</h5>
+
+    // --- Directions<br />
+    // Write a function that returns the number of vowels<br />
+    // used in a string.  Vowels are the characters 'a', 'e'<br />
+    // 'i', 'o', and 'u'.<br /><br />
+    // --- Examples<br />
+    //   vowels('Hi There!') --> 3<br />
+    //   vowels('Why do you ask?') --> 4<br />
+    //   vowels('Why?') --> 0<br />
+    <hr />
+    <form>
+        <div class="form-group row">
+            <label for="string1" class="col-sm-4 col-form-label">Enter String for checking Vowel Count:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="string1" placeholder="Input String 1">
+            </div>
+        </div>
+       
+
+        <div class="form-group row">
+            <div class="col-sm-8">
+                <button type="button" onclick="checkVowel()" class="btn btn-sm btn-primary">Count Vowels!</button>
+
+            </div>
+        </div>
+    </form>
+
+    <strong>Vowel Count:</strong> <strong><span style="color:green" id="vowelcountspan"></span></strong><br /><br />
+
+    <hr />
+    TYPESCRIPT CODE:<br />
+
+    <pre>
+        <code>
+
+            function countVowels(str: string): number {
+
+                const vowelChecker: string[] = ['a','e', 'i', 'o', 'u'];
+                let vowelCount: number = 0;
+
+                for (let char of str.toLowerCase()) {
+
+                    if (vowelChecker.includes(char)) {
+                        vowelCount++;
+
+                    }
+                }
+
+                return vowelCount;
+            }
+
+        </code>
+    </pre>
+
+
+</div>
+
+<script type="text/javascript">
+    function checkVowel() {
+
+        document.getElementById("vowelcountspan").innerHTML = countVowels(document.getElementById("string1").value);
+    }
+</script>

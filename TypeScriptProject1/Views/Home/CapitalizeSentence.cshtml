@@ -9,7 +9,16 @@
 
 <div class="container-fluid">
 
-    <h5>REVERSE STRING</h5>
+    <h5>CAPITALIZE SENTENCE</h5><br />
+    // --- Directions<br />
+    // Write a function that accepts a string.  The function should<br />
+    // capitalize the first letter of each word in the string then<br />
+    // return the capitalized string.<br /><br />
+    // --- Examples<br />
+    //   capitalize('a short sentence') --> 'A Short Sentence'<br />
+    //   capitalize('a lazy fox') --> 'A Lazy Fox'<br />
+    //   capitalize('look, it is working!') --> 'Look, It Is Working!'<br />
+    <hr />
 
     <form>
         <div class="form-group row">
@@ -26,8 +35,29 @@
             </div>
         </div>
     </form>
+    <br />
+    <strong>Capitalized Sentence:</strong> <strong><span style="color:green" id="capitalizedsentence"></span></strong>
+   <hr />
+    TYPESCRIPT CODE:
+   <pre>
+        <code>
+        function capitalizeSentence(str: string): string {
 
-    <strong>Capitalized Sentence:</strong> <span id="capitalizedsentence"></span>
+        let wordArr: string[];
+
+        wordArr = str.split(' ');
+        var updatedWordArr: string[] = [''];
+
+        for (let word of wordArr) {
+
+        updatedWordArr.push(word[0].toUpperCase() + word.slice(1)) ;
+        }
+
+        return  updatedWordArr.join(' ');
+        }
+        </code>
+    </pre>
+
 
 </div>
 

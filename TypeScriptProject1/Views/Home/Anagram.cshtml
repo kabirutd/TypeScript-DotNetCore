@@ -11,7 +11,7 @@
 
     <h5>ANAGRAM</h5>
 
-    // ANAGRAM ALGO DETAILS:<br/>
+    // ANAGRAM ALGO DETAILS:<br />
     // Check to see if two provided strings are anagrams of each other.<br />
     // One string is an anagram of another if it uses the same characters<br />
     // in the same quantity. Only consider characters, not spaces<br />
@@ -19,21 +19,22 @@
     // --- Examples<br />
     //   anagrams('rail safety', 'fairy tales') --> True<br />
     //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True<br />
+    //   anagrams('Atom', 'ma to') --> True<br />
     //   anagrams('Hi there', 'Bye there') --> False<br />
-
+    <hr />
     <form>
         <div class="form-group row">
             <label for="string1" class="col-sm-4 col-form-label">Enter String 1:</label>
             <div class="col-sm-4">
                 <input type="text" class="form-control" id="string1" placeholder="Input String 1">
             </div>
+        </div>
+        <div class="form-group row">
+            <label for="string2" class="col-sm-4 col-form-label">Enter String 2:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="string2" placeholder="Input String2">
             </div>
-            <div class="form-group row">
-                <label for="string2" class="col-sm-4 col-form-label">Enter String 2:</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control" id="string2" placeholder="Input String2">
-                </div>
-            </div>
+        </div>
 
         <div class="form-group row">
             <div class="col-sm-8">
@@ -43,11 +44,11 @@
         </div>
     </form>
 
-    <strong>Are String1 and String2 anagram?:</strong> <strong><span style="color:green" id="checkanagramspan"></span></strong><br/><br/>
-    
+    <strong>Are String1 and String2 anagram?:</strong> <strong><span style="color:green" id="checkanagramspan"></span></strong><br /><br />
 
-     TYPESCRIPT CODE:<br/>
-        
+    <hr />
+    TYPESCRIPT CODE:<br />
+
     <pre>
     <code>
 

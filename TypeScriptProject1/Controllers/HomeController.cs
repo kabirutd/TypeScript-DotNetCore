@@ -17,7 +17,10 @@ namespace TypeScriptProject1.Controllers
         {
             _logger = logger;
         }
-
+        public IActionResult VowelCounter()
+        {
+            return View();
+        }
         public IActionResult Anagram()
         {
             return View();

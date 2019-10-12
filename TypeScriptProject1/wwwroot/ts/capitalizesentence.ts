@@ -7,7 +7,7 @@
 
     for (let word of wordArr) {
 
-        updatedWordArr.push(word[0].toUpperCase() + word.slice(1)) ; //+ word.splice
+        updatedWordArr.push(word[0].toUpperCase() + word.slice(1)) ; 
     }
 
     return  updatedWordArr.join(' ');

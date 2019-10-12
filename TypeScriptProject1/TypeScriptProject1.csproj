@@ -8,9 +8,11 @@
     <Content Remove="wwwroot\ts\capitalizesentence.ts" />
     <Content Remove="wwwroot\ts\functions.ts" />
     <Content Remove="wwwroot\ts\maxchar.ts" />
+    <Content Remove="wwwroot\ts\queue.ts" />
     <Content Remove="wwwroot\ts\reverseint.ts" />
     <Content Remove="wwwroot\ts\reversestring.ts" />
     <Content Remove="wwwroot\ts\tests.ts" />
+    <Content Remove="wwwroot\ts\vowels.ts" />
   </ItemGroup>
 
   <ItemGroup>
